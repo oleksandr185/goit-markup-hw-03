@@ -20,24 +20,25 @@
     />
   </head>
   <body>
+    </head>
+  <body class="body">
+    <!-- header -->
     <header class="header">
-      <nav class="header-navigation">
-        <a lang="en" href="" class="logo"
-          >Web<span class="studio-logo">Studio</span></a
-        >
+      <div class="container-header">
+        <a lang="en" href="" class="logo">Web<span class="studio-logo">Studio</span></a>
+        
         <ul>
+        <nav class="navigation">
           <li>
             <a href="./index.html" class="nav-studio">Студія</a>
           </li>
           <li>
-            <a href="./portfolio.html" class="nav-portfolio current"
-              >Портфоліо</a
-            >
+            <a href="./portfolio.html" class="nav-portfolio current">Портфоліо</a>
           </li>
           <li><a href="" class="nav-contact">Контакт</a></li>
         </ul>
       </nav>
-      <ul>
+      <ul class="contacts">
         <li>
           <a href="mailto:info@devstudio.com" class="header-mail"
             >info@devstudio.com
@@ -49,11 +50,15 @@
           </a>
         </li>
       </ul>
+      </div>
+      
     </header>
     <main>
-      <section>
+      <section class="portfolio">
+        <div class="portfolio-container">
         <h1 class="visually-hidden">Портфоліо</h1>
-        <ul>
+        <ul class="filters">
+          <div class="filter-box">
           <li>
             <button type="button" class="portfolio-filter-all current">
               Усі
@@ -77,16 +82,18 @@
               Маркетинг
             </button>
           </li>
+          </div>
         </ul>
         <ul>
-          <li class="portfolio-group">
+          <div class="portfolio-group-box1">
+          <li class="portfolio-group1">
             <a href="" target="_blank" rel="noopener noreferrer nofollow">
               <img src="./images/img21.jpg" width="370" alt="Laptop display" />
               <h2 class="portfolio-group-title">Технокряк</h2>
               <p class="portfolio-group-p">Веб-сайт</p>
             </a>
           </li>
-          <li class="portfolio-group">
+          <li class="portfolio-group2">
             <a href="" target="_blank" rel="noopener noreferrer nofollow">
               <img
                 src="./images/img22.jpg"
@@ -99,7 +106,7 @@
               <p class="portfolio-group-p">Дизайн</p>
             </a>
           </li>
-          <li class="portfolio-group">
+          <li class="portfolio-group3">
             <a href="" target="_blank" rel="noopener noreferrer nofollow">
               <img
                 src="./images/img33.jpg"
@@ -110,14 +117,16 @@
               <p class="portfolio-group-p">Додаток</p>
             </a>
           </li>
-          <li class="portfolio-group">
+          </div>
+          <div class="portfolio-group-box2">
+          <li class="portfolio-group4">
             <a href="" target="_blank" rel="noopener noreferrer nofollow">
               <img src="./images/img44.jpg" width="370" alt="headphones" />
               <h2 class="portfolio-group-title">Проєкт Prime</h2>
               <p class="portfolio-group-p">Маркетинг</p>
             </a>
           </li>
-          <li class="portfolio-group">
+          <li class="portfolio-group5">
             <a href="" target="_blank" rel="noopener noreferrer nofollow">
               <img
                 src="./images/img55.jpg"
@@ -128,28 +137,30 @@
               <p class="portfolio-group-p">Додаток</p>
             </a>
           </li>
-          <li class="portfolio-group">
+          <li class="portfolio-group6">
             <a href="" target="_blank" rel="noopener noreferrer nofollow">
               <img src="./images/img66.jpg" width="370" alt="display PC" />
               <h2 class="portfolio-group-title">Inspiration has no Borders</h2>
-              <p class="portfolio-group6-p">Веб-сайт</p>
+              <p class="portfolio-group-p">Веб-сайт</p>
             </a>
           </li>
-          <li class="portfolio-group">
+          </div>
+          <div class="portfolio-group-box3">
+          <li class="portfolio-group7">
             <a href="" target="_blank" rel="noopener noreferrer nofollow">
               <img src="./images/img77.jpg" width="370" alt="opened bock" />
               <h2 class="portfolio-group-title">Видання Limited edition</h2>
               <p class="portfolio-group-p">Дизайн</p>
             </a>
           </li>
-          <li class="portfolio-group">
+          <li class="portfolio-group8">
             <a href="" target="_blank" rel="noopener noreferrer nofollow">
               <img src="./images/img88.jpg" width="370" alt="label" />
               <h2 class="portfolio-group-title">Проєкт LAB</h2>
               <p class="portfolio-group-p">Маркетинг</p>
             </a>
           </li>
-          <li class="portfolio-group">
+          <li class="portfolio-group9">
             <a href="" target="_blank" rel="noopener noreferrer nofollow">
               <img
                 src="./images/img99.jpg"
@@ -160,21 +171,24 @@
               <p class="portfolio-group-p">Додаток</p>
             </a>
           </li>
+          </div>
         </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <a class="logo" href="./index.html"
+      <div class="container-footer">
+      <a class="logo-foter" href="./index.html"
         >Web<span class="studio-footer">Studio</span></a
       >
-      <address>
+      <address class="address-box">
         <ul>
           <li>
             <a
               href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
               target="_blank"
               rel="noopener noreferrer nofollow"
-              class="footer-adress"
+              class="footer-address"
             >
               м. Київ, пр-т Лесі Українки, 26
             </a>
@@ -189,6 +203,7 @@
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
