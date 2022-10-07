@@ -48,14 +48,15 @@ a {
 }
 /* logo */
 .container-header {
-  margin: auto;
+  margin: 0 auto;
   width: 1200px;
-  height: 80px;
   display: flex;
 }
-.logo {
-  padding: 24px 0px 0px 15px;
-  margin-right: 93px;
+
+.logo {display: block;
+  width: 145px;
+  height: 31px;
+  margin: 14px 93px 25px 15px;
 
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -96,8 +97,6 @@ a {
 }
 .nav-portfolio {
   padding-right: 50px;
-}
-.nav-contact {
 }
 .navigation {
   display: flex;
@@ -428,8 +427,9 @@ a {
 .address-box {
   padding: 0px 0px 60px 15px;
 }
-.logo-foter {
-  display: block;
+.logo-foter {display: block;
+  width: 145px;
+  height: 31px;
   padding: 60px 0px 0px 15px;
   margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
@@ -633,7 +633,6 @@ a {
 }
 
 /* portfolio group */
-/* group */
 
 .portfolio-group-title {
   margin-top: 20px;
