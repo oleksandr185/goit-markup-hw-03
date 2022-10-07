@@ -21,6 +21,7 @@ body {
   --color-white: #ffffff;
   --color-primary: #eeeeee;
   --color-white-secondary: #f5f4fa;
+  --color-border: #ececec;
 }
 ul {
   list-style: none;
@@ -51,13 +52,14 @@ a {
   margin: 0 auto;
   width: 1200px;
   display: flex;
+  border: solid bottom 1px var(--color-border);
 }
 
-.logo {display: block;
+.logo {
+  display: block;
   width: 145px;
   height: 31px;
   margin: 14px 93px 25px 15px;
-
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -392,9 +394,9 @@ a {
 }
 /* footer */
 .container-footer {
-  margin-left: auto;
-  margin-right: auto;
   width: 1200px;
+  height: 252px;
+  margin: 0 auto;
 }
 .footer {
   background-color: var(--color-black-secondary);
@@ -403,6 +405,7 @@ a {
   color: var(--color-white);
 }
 .footer-mail {
+  margin-left: 15px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -414,6 +417,8 @@ a {
   color: var(--color-blue);
 }
 .footer-tel {
+  padding-bottom: 60px;
+  margin-left: 15px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -424,13 +429,13 @@ a {
 .footer-tel:hover {
   color: var(--color-blue);
 }
-.address-box {
-  padding: 0px 0px 60px 15px;
-}
-.logo-foter {display: block;
+
+.logo-footer {
+  display: inline-block;
   width: 145px;
   height: 31px;
-  padding: 60px 0px 0px 15px;
+  margin-left: 15px;
+  margin-top: 60px;
   margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -441,6 +446,9 @@ a {
   color: var(--color-blue-secondary);
 }
 .footer-address {
+  display: inline-block;
+  padding-bottom: 0px;
+  margin-left: 15px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -453,12 +461,12 @@ a {
 }
 
 /* portfolio filter*/
-.portfolio {
-}
+
 .portfolio-container {
   width: 1170px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 94px;
   margin-bottom: 94px;
 }
 .filters {
@@ -467,7 +475,7 @@ a {
 }
 .filter-box {
   margin-left: 311px;
-  margin-bottom: 24px;
+  margin-bottom: 34px;
   width: 575px;
   display: flex;
 }
