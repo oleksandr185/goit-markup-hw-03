@@ -4,11 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"/>
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <title>Web Studio (Version 2.1) (Copy)</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -52,11 +50,11 @@
       </header>
     <main>
       <section class="portfolio">
-        <div class="portfolio-container">
+        <div class="container">
+          <div class="portfolio-container">
         <h1 class="visually-hidden">Портфоліо</h1>
         <ul class="filters">
-          <div class="filter-box">
-          <li>
+        <li>
             <button type="button" class="portfolio-filter-all current">
               Усі
             </button>
@@ -79,15 +77,17 @@
               Маркетинг
             </button>
           </li>
-          </div>
+      
         </ul>
-        <ul>
-          <div class="portfolio-group-box1">
+        <ul class="portfolio-card">
+        
           <li class="portfolio-group1">
             <a href="" target="_blank" rel="noopener noreferrer nofollow">
               <img src="./images/img21.jpg" width="370" class="1mg" alt="Laptop display" />
+              <div class="group-item">
               <h2 class="portfolio-group-title">Технокряк</h2>
               <p class="portfolio-group-p">Веб-сайт</p>
+              </div>
             </a>
           </li>
           <li class="portfolio-group2">
@@ -95,12 +95,13 @@
               <img
                 src="./images/img22.jpg"
                 width="370" class="img"
-                alt="mens playing basketball"
-              />
+                alt="mens playing basketball"/>
+                <div class="group-item">
               <h2 class="portfolio-group-title">
                 Постер New Orlean vs Golden Sta
               </h2>
               <p class="portfolio-group-p">Дизайн</p>
+              </div>
             </a>
           </li>
           <li class="portfolio-group3">
@@ -108,19 +109,22 @@
               <img
                 src="./images/img33.jpg"
                 width="370" class="img"
-                alt="restaurant poster"
-              />
+                alt="restaurant poster"/>
+                <div class="group-item">
               <h2 class="portfolio-group-title">Ресторан Seafood</h2>
               <p class="portfolio-group-p">Додаток</p>
+              </div>
             </a>
           </li>
-          </div>
-          <div class="portfolio-group-box2">
+          
+          
           <li class="portfolio-group4">
             <a href="" target="_blank" rel="noopener noreferrer nofollow">
               <img src="./images/img44.jpg" width="370" class="img" alt="headphones" />
+              <div class="group-item">
               <h2 class="portfolio-group-title">Проєкт Prime</h2>
               <p class="portfolio-group-p">Маркетинг</p>
+              </div>
             </a>
           </li>
           <li class="portfolio-group5">
@@ -128,33 +132,37 @@
               <img
                 src="./images/img55.jpg"
                 width="370"
-                alt="two carton boxes"
-              />
+                alt="two carton boxes"/>
+                <div class="group-item">
               <h2 class="portfolio-group-title">Проєкт boxes</h2>
               <p class="portfolio-group-p">Додаток</p>
-            </a>
+            </div>            </a>
           </li>
           <li class="portfolio-group6">
             <a href="" target="_blank" rel="noopener noreferrer nofollow">
-              <img src="./images/img66.jpg" width="370" class="img" alt="display PC" />
+              <img src="./images/img66.jpg" width="370" class="img" alt="display PC"/>
+              <div class="group-item">
               <h2 class="portfolio-group-title">Inspiration has no Borders</h2>
               <p class="portfolio-group-p">Веб-сайт</p>
+              </div>
             </a>
           </li>
-          </div>
-          <div class="portfolio-group-box3">
           <li class="portfolio-group7">
             <a href="" target="_blank" rel="noopener noreferrer nofollow">
               <img src="./images/img77.jpg" width="370" class="img" alt="opened bock" />
+              <div class="group-item">
               <h2 class="portfolio-group-title">Видання Limited edition</h2>
               <p class="portfolio-group-p">Дизайн</p>
+              </div>
             </a>
           </li>
           <li class="portfolio-group8">
             <a href="" target="_blank" rel="noopener noreferrer nofollow">
               <img src="./images/img88.jpg" width="370" class="img" alt="label" />
+              <div class="group-item">
               <h2 class="portfolio-group-title">Проєкт LAB</h2>
               <p class="portfolio-group-p">Маркетинг</p>
+              </div>
             </a>
           </li>
           <li class="portfolio-group9">
@@ -162,22 +170,23 @@
               <img
                 src="./images/img99.jpg"
                 width="370" class="img"
-                alt="two hands on Laptop kye board"
-              />
+                alt="two hands on Laptop kye board"/>
+                <div class="group-item">
               <h2 class="portfolio-group-title">Growing business</h2>
               <p class="portfolio-group-p">Додаток</p>
-            </a>
-          </li>
-          </div>
-        </ul>
+            </div>            
+          </a>
+          </ul>
+        </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="container-footer">
+        <div class="container">
+          <div class="container-footer">
       <a class="logo-footer" href="./index.html">Web<span class="studio-footer">Studio</span></a>
-      <address class="address-footer">
-        <ul>
+      <address>
+        <ul class="address-footer">
           <li>
             <a class="footer-address" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
               target="_blank"
@@ -195,6 +204,7 @@
           </li>
         </ul>
       </address>
+      </div>
       </div>
     </footer>
   </body>
