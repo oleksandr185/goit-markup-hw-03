@@ -48,18 +48,33 @@ a {
   text-decoration: none;
 }
 /* logo */
-.container-header {
+.header{
+  border-bottom: solid  1px var(--color-border);
+
+}
+.container{ 
   margin: 0 auto;
-  width: 1200px;
+  width: 1200px; background-color: yellowgreen;}
+.container-header { align-items: center;
   display: flex;
-  border: solid bottom 1px var(--color-border);
+}
+.navigation {
+  display: flex;
+}
+.menu-header{margin-right: 344px;
+  display: flex;
+  align-items: center;
+  padding: 32px 0 32px 0;
+}
+.contacts-header{
+  display: flex;
+  align-items: center;
+  padding-right: 32px 15px 32px 0;
 }
 
-.logo {
-  display: block;
-  width: 145px;
-  height: 31px;
-  margin: 14px 93px 25px 15px;
+.logo-header { 
+  box-sizing: 145px 31px;
+  padding: 24px 93px 25px 15px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -97,14 +112,11 @@ a {
   letter-spacing: 0.02em;
   color: var(--color-blue);
 }
+
 .nav-portfolio {
   padding-right: 50px;
 }
-.navigation {
-  display: flex;
-  padding: 32px 0px 32px 0px;
-  margin-right: 344px;
-}
+
 .nav-portfolio {
   font-weight: 500;
   font-size: 14px;
@@ -137,10 +149,8 @@ a {
   letter-spacing: 0.02em;
   color: var(--color-grey);
 }
-.contacts {
-  padding-top: 32px;
-  display: flex;
-}
+
+
 .header-mail:hover {
   font-weight: 500;
   font-size: 14px;
@@ -160,49 +170,43 @@ a {
   color: var(--color-blue);
 }
 /* main section1 */
-.container-main {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-}
-.main-section {
-  margin-left: auto;
-  margin-right: auto;
-  background: var(--color-black-secondary);
+.main-section{
   margin-bottom: 94px;
 }
+
+.main-title{ background-color: #757575;
+  margin: 0 auto;
+  width: 696px;
+}
+
 .main-section-title {
-  margin-left: 252px;
-  margin-right: 252px;
-  display: block;
   padding-top: 200px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.4;
   text-align: center;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
   color: var(--color-white);
 }
-.main-section-button {
+.main-section-button { 
+  margin-left: 240px;
+  margin-bottom: 200px;
   width: 216px;
   height: 50px;
-  display: inline-block;
-  margin: 0px 492px 200px 482px;
-  padding: 10px 32px 10px 32px;
   text-decoration: none;
   background-color: var(--color-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border-color: transparent;
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
-  align-items: center;
-  text-align: center;
+  
   color: var(--color-white);
 }
 .main-section-button:focus {
@@ -217,28 +221,17 @@ a {
   border-radius: 4px;
 }
 /* main-qualities */
-.container-qualities {
-  margin-left: auto;
-  margin-right: auto;
+.container-qualities{
   margin-bottom: 94px;
-  width: 1170px;
 }
-.qualities-box {
+
+.qualities{
   display: flex;
+  justify-content: center;
+align-items: flex-start;
+gap: 30px;
 }
-.qualities-box1 {
-  margin-right: 30px;
-  width: 270px;
-}
-.qualities-box2 {
-  margin-right: 30px;
-  width: 270px;
-}
-.qualities-box3 {
-  margin-right: 30px;
-  width: 270px;
-}
-.qualities-box4 {
+.qualities-box{
   width: 270px;
 }
 
@@ -263,7 +256,7 @@ a {
   color: var(--color-black);
   margin: 0px;
 }
-.main-qualities-discription {
+.main-qualities-description {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -271,32 +264,29 @@ a {
   color: var(--color-grey);
 }
 /* what-doing */
-.container-what-doing {
-  margin-left: auto;
-  width: 1170px;
-  margin-right: auto;
+.what-doing-list{
+  display: flex;
+  gap: 30px;
   margin-bottom: 94px;
 }
-.what-doing-box {
-  display: flex;
-}
 .what-doing-box1 {
-  margin-right: 30px;
+  padding-left: 15px;
+  max-width: 100%;
   background: url(close-up-image-programer-working-his-desk-office_1098-18707.jpg);
   mix-blend-mode: normal;
 }
 .what-doing-box2 {
-  margin-right: 30px;
+  max-width: 100%;
   background: url(web-ui-designers-are-developing-application-smartphones-team-creators-is-
   working-interface-mobile-phones_8119-2713.jpg);
 }
 .what-doing-box3 {
-  padding-left: 0px;
+  max-width: 100%;
   background: url(creative-artist-web-design-with-
   working-colour-selection-graphic-tablet_35674-1119.jpg);
 }
 .what-doing-title {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -311,14 +301,9 @@ a {
   height: auto;
 }
 .container-our-time {
-  width: 1170px;
-  background-color: ;
+ 
 }
-/* our-time */
-.container-our-time {
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .time-box {
   padding-bottom: 94px;
   display: flex;
@@ -337,6 +322,9 @@ a {
   letter-spacing: 0.03em;
   color: var(--color-black);
 }
+.time-description{
+  padding: 30px;
+}
 .our-time-name {
   font-weight: 500;
   font-size: 16px;
@@ -344,11 +332,9 @@ a {
   letter-spacing: 0.03em;
   color: var(--color-black);
   text-align: center;
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 .our-time-position {
-  padding-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.12;
@@ -357,6 +343,7 @@ a {
 }
 
 .our-time-card1 {
+  margin-left: 15px;
   background-color: var(--color-white);
   margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -384,7 +371,6 @@ a {
   border-radius: 0px;
 }
 .our-time-card4 {
-  display: inline;
   background-color: var(--color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
