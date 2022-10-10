@@ -4,6 +4,7 @@ body {
 *,
 *::before,
 *::after {
+  box-sizing: inherit;
 }
 
 :root {
@@ -49,29 +50,33 @@ a {
 .container {
   margin: 0 auto;
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .container-header {
   align-items: center;
   display: flex;
 }
 .navigation {
+  margin-right: 344px;
   display: flex;
 }
 .menu-header {
-  margin-right: 344px;
   display: flex;
   align-items: center;
-  padding: 32px 0 32px 0;
+  gap: 50px;
 }
 .contacts-header {
   display: flex;
   align-items: center;
-  padding-right: 32px 15px 32px 0;
+  gap: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .logo-header {
-  box-sizing: 145px 31px;
-  padding: 24px 93px 25px 15px;
+  padding: 24px 0;
+  margin-right: 93px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -91,7 +96,7 @@ a {
 }
 /* navigation */
 .nav-studio {
-  padding-right: 50px;
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -109,12 +114,8 @@ a {
   letter-spacing: 0.02em;
   color: var(--color-blue);
 }
-
 .nav-portfolio {
-  padding-right: 50px;
-}
-
-.nav-portfolio {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -128,6 +129,7 @@ a {
   color: var(--color-blue);
 }
 .nav-contact {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -139,7 +141,6 @@ a {
 }
 
 .header-mail {
-  margin-right: 50px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -167,8 +168,9 @@ a {
 }
 /* main section1 */
 .main-section {
+  padding-top: 200px;
   background-color: var(--color-black-secondary);
-  margin-bottom: 94px;
+  padding-bottom: 200px;
 }
 
 .main-title {
@@ -179,8 +181,9 @@ a {
 }
 
 .main-section-title {
-  padding-top: 200px;
-  padding-bottom: 30px;
+  text-transform: uppercase;
+
+  margin-bottom: 30px;
 
   font-weight: 900;
   font-size: 44px;
@@ -190,9 +193,10 @@ a {
   color: var(--color-white);
 }
 .main-section-button {
+  border: none;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 200px;
+
   width: 216px;
   height: 50px;
   padding: 10px;
@@ -222,13 +226,13 @@ a {
 }
 /* main-qualities */
 .container-qualities {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .qualities {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   gap: 30px;
 }
 .qualities-box {
@@ -243,11 +247,11 @@ a {
   overflow: hidden;
   border: 0;
   padding: 0;
-  clip: rect(0 0 0);
   clip-path: inset(50%);
   margin: -1px;
 }
 .main-qualities-title {
+  padding-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -264,26 +268,27 @@ a {
   color: var(--color-grey);
 }
 /* what-doing */
+.container-what-doing {
+  padding-bottom: 94px;
+}
 .what-doing-list {
   display: flex;
   gap: 30px;
-  margin-bottom: 94px;
+  align-content: center;
+  justify-content: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
 .what-doing-box1 {
-  padding-left: 15px;
-  max-width: 100%;
-  background: url(close-up-image-programer-working-his-desk-office_1098-18707.jpg);
-  mix-blend-mode: normal;
+  display: block;
 }
 .what-doing-box2 {
-  max-width: 100%;
-  background: url(web-ui-designers-are-developing-application-smartphones-team-creators-is-
-  working-interface-mobile-phones_8119-2713.jpg);
+  display: block;
 }
 .what-doing-box3 {
-  max-width: 100%;
-  background: url(creative-artist-web-design-with-
-  working-colour-selection-graphic-tablet_35674-1119.jpg);
+  display: block;
 }
 .what-doing-title {
   margin-bottom: 50px;
@@ -295,24 +300,22 @@ a {
   color: var(--color-black);
 }
 /* our-time */
-.img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+
 .container-our-time {
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .time-box {
-  padding-bottom: 94px;
+  justify-content: center;
   display: flex;
+  gap: 30px;
 }
 
 .our-time {
   background: var(--color-white-secondary);
 }
 .our-time-title {
-  padding-top: 94px;
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -322,6 +325,7 @@ a {
   color: var(--color-black);
 }
 .time-description {
+  background-color: var(--color-white);
   padding: 30px;
 }
 .our-time-name {
@@ -342,9 +346,7 @@ a {
 }
 
 .our-time-card1 {
-  margin-left: 15px;
   background-color: var(--color-white);
-  margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -352,7 +354,6 @@ a {
   border-radius: 0px;
 }
 .our-time-card2 {
-  margin-right: 30px;
   background-color: var(--color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -361,7 +362,6 @@ a {
   border-radius: 0px;
 }
 .our-time-card3 {
-  margin-right: 30px;
   background-color: var(--color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -381,17 +381,16 @@ a {
 .container-footer {
   display: flex;
   flex-direction: column;
-  padding-bottom: 60px;
-  padding-top: 60px;
 }
 .footer {
+  padding-bottom: 60px;
+  padding-top: 60px;
   background-color: var(--color-black-secondary);
 }
 .studio-footer {
   color: var(--color-white);
 }
 .footer-mail {
-  padding-left: 15px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -403,7 +402,6 @@ a {
   color: var(--color-blue);
 }
 .footer-tel {
-  padding-left: 15px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -414,15 +412,8 @@ a {
 .footer-tel:hover {
   color: var(--color-blue);
 }
-.logo-footer-box{
-
-}
 
 .logo-footer {
-  padding-left: 15px;
-  width: 145px;
-  height: 31px;
-  
   margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -433,10 +424,6 @@ a {
   color: var(--color-blue-secondary);
 }
 .footer-address {
-  margin-bottom: 60px;
-  width: 231px;
-  height: 81px;
-  padding-left: 15px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -447,21 +434,29 @@ a {
 .footer-address:hover {
   color: var(--color-blue);
 }
+.address-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
 
 /* portfolio filter*/
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .portfolio-container {
-  padding-top: 94px;
 }
 .filters {
   justify-content: center;
   gap: 8px;
   display: flex;
+  margin-bottom: 34px;
 }
-.portfolio-filter-all {
+.portfolio-filter {
+  padding: 6px 22px;
   border-color: transparent;
-  width: 73px;
-  height: 38px;
   font-family: inherit;
   font-style: inherit;
   font-weight: 500;
@@ -472,7 +467,7 @@ a {
   color: var(--color-black);
   background-color: var(--color-white-secondary);
 }
-.portfolio-filter-all:hover {
+.portfolio-filter:hover {
   cursor: pointer;
   color: var(--color-white);
   background-color: var(--color-blue);
@@ -480,119 +475,7 @@ a {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-.portfolio-filter-all:focus {
-  color: var(--color-white);
-  background-color: var(--color-blue);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
-.portfolio-filter-web {
-  border-color: transparent;
-  width: 125px;
-  height: 38px;
-  font-family: inherit;
-  font-style: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--color-black);
-  background-color: var(--color-white-secondary);
-}
-.portfolio-filter-web:hover {
-  cursor: pointer;
-  color: var(--color-white);
-  background: var(--color-blue);
-  border-radius: 4px;
-}
-.portfolio-filter-web:focus {
-  color: var(--color-white);
-  background: var(--color-blue);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
-
-.portfolio-filter-appendix {
-  border-color: transparent;
-  width: 112px;
-  height: 38px;
-  font-family: inherit;
-  font-style: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--color-black);
-  background-color: var(--color-white-secondary);
-}
-.portfolio-filter-appendix:hover {
-  cursor: pointer;
-  color: var(--color-white);
-  background-color: var(--color-blue);
-  border-radius: 4px;
-}
-.portfolio-filter-appendix:focus {
-  color: var(--color-white);
-  background: var(--color-blue);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
-
-.portfolio-filter-design {
-  border-color: transparent;
-  width: 103px;
-  height: 38px;
-  font-family: inherit;
-  font-style: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--color-black);
-  background-color: var(--color-white-secondary);
-}
-.portfolio-filter-design:hover {
-  cursor: pointer;
-  color: var(--color-white);
-  background-color: var(--color-blue);
-  border-radius: 4px;
-}
-.portfolio-filter-design:focus {
-  color: var(--color-white);
-  background-color: var(--color-blue);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
-
-.portfolio-filter-marketing {
-  border-color: transparent;
-  width: 130px;
-  height: 38px;
-  font-family: inherit;
-  font-style: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--color-black);
-  background-color: var(--color-white-secondary);
-}
-
-.portfolio-filter-marketing:hover {
-  cursor: pointer;
-  color: var(--color-white);
-  background-color: var(--color-blue);
-  border-radius: 4px;
-}
-.portfolio-filter-marketing:focus {
+.portfolio-filter:focus {
   color: var(--color-white);
   background-color: var(--color-blue);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -602,15 +485,12 @@ a {
 
 /* portfolio card */
 .portfolio-card {
-  padding-top: 34px;
+  gap: 30px;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  margin-bottom: 94px;
 }
 .group-item {
-  padding-left: 24px;
-  padding-top: 20px;
+  padding: 20px 24px;
 }
 
 .portfolio-group-title {
@@ -622,7 +502,6 @@ a {
 .portfolio-group-p {
   margin-top: 4px;
   font-size: 16px;
-  padding-bottom: 20px;
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--color-grey);
@@ -630,45 +509,36 @@ a {
 .portfolio-group1 {
   background-color: var(--color-white);
   border: 1px solid var(--color-primary);
-  background: url(portfolio1.jpg);
 }
 .portfolio-group2 {
   background-color: var(--color-white);
   border: 1px solid var(--color-primary);
-  background: url(portfolio2.jpg);
 }
 .portfolio-group3 {
   background-color: var(--color-white);
   border: 1px solid var(--color-primary);
-  background: url(portfolio-1.jpg);
 }
 .portfolio-group4 {
   background-color: var(--color-white);
   border: 1px solid var(--color-primary);
-  background: url(portfolio-2);
 }
 .portfolio-group5 {
   background-color: var(--color-white);
   border: 1px solid var(--color-primary);
-  background: url(portfolio5);
 }
 .portfolio-group6 {
   background-color: var(--color-white);
   border: 1px solid var(--color-primary);
-  background: url(111);
 }
 .portfolio-group7 {
   background-color: var(--color-white);
   border: 1px solid var(--color-primary);
-  background: url(portfolio7);
 }
 .portfolio-group8 {
   background-color: var(--color-white);
   border: 1px solid var(--color-primary);
-  background: url(portfolio8.jpg);
 }
 .portfolio-group9 {
   background-color: var(--color-white);
   border: 1px solid var(--color-primary);
-  background: url(2910404);
 }
