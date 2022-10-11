@@ -2,7 +2,6 @@ body {
   font-family: "Roboto";
 }
 
-
 :root {
   --color-black: #212121;
   --color-black-secondary: #2f303a;
@@ -20,7 +19,10 @@ ul {
   padding-left: 0px;
   margin: 0px;
 }
-h1,h2,h3,p {
+h1,
+h2,
+h3,
+p {
   margin: 0px;
 }
 
@@ -213,9 +215,8 @@ img {
   color: var(--color-grey);
 }
 /* what-doing */
-.what-doing{
+.what-doing {
   padding-bottom: 94px;
-
 }
 
 .what-doing-list {
