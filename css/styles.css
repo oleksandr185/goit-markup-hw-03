@@ -148,9 +148,7 @@ img {
 
 .main-section-title {
   text-transform: uppercase;
-
   margin-bottom: 30px;
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -162,7 +160,6 @@ img {
   border: none;
   margin-left: auto;
   margin-right: auto;
-
   width: 216px;
   height: 50px;
   padding: 10px;
@@ -176,7 +173,6 @@ img {
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
-
   color: var(--color-white);
 }
 .main-section-button:focus {
@@ -195,7 +191,6 @@ img {
   padding-bottom: 94px;
   padding-top: 94px;
 }
-
 .qualities {
   display: flex;
   justify-content: center;
@@ -204,7 +199,6 @@ img {
 .qualities-box {
   width: 270px;
 }
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -269,7 +263,6 @@ img {
   display: flex;
   gap: 30px;
 }
-
 .our-time {
   padding-bottom: 94px;
   padding-top: 94px;
