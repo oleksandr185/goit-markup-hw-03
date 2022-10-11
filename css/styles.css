@@ -4,7 +4,7 @@ body {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: content-box;
 }
 
 :root {
@@ -43,6 +43,12 @@ p {
 a {
   text-decoration: none;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* logo */
 .header {
   border-bottom: solid 1px var(--color-border);
@@ -58,7 +64,7 @@ a {
   display: flex;
 }
 .navigation {
-  margin-right: 344px;
+  margin-right: auto;
   display: flex;
 }
 .menu-header {
@@ -70,8 +76,6 @@ a {
   display: flex;
   align-items: center;
   gap: 50px;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .logo-header {
@@ -81,7 +85,7 @@ a {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.9;
+  line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--color-blue-secondary);
 }
@@ -90,12 +94,13 @@ a {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.9;
+  line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--color-black-secondary);
 }
 /* navigation */
-.nav-studio {
+.nav-link {
+  padding: 32px 0;
   display: block;
   font-weight: 500;
   font-size: 14px;
@@ -107,63 +112,24 @@ a {
   color: var(--color-blue);
 }
 
-.nav-studio:hover {
+.nav-link:hover {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--color-blue);
-}
-.nav-portfolio {
-  display: block;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--color-black);
-}
-.nav-portfolio:hover {
-  color: var(--color-blue);
-}
-.current {
-  color: var(--color-blue);
-}
-.nav-contact {
-  display: block;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--color-black);
-}
-.nav-contact:hover {
   color: var(--color-blue);
 }
 
-.header-mail {
+.header-connect {
+  padding: 32px 0;
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--color-grey);
 }
-
-.header-mail:hover {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--color-blue);
-}
-
-.header-phone {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--color-grey);
-}
-.header-phone:hover {
+.header-connect:hover {
   color: var(--color-blue);
 }
 /* main section1 */
@@ -208,7 +174,7 @@ a {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: calc(30 / 16);
   letter-spacing: 0.06em;
 
   color: var(--color-white);
@@ -251,7 +217,6 @@ a {
   margin: -1px;
 }
 .main-qualities-title {
-  padding-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -261,6 +226,7 @@ a {
   margin: 0px;
 }
 .main-qualities-description {
+  margin-top: 10px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -277,10 +243,7 @@ a {
   align-content: center;
   justify-content: center;
 }
-img {
-  max-width: 100%;
-  height: auto;
-}
+
 .what-doing-box1 {
   display: block;
 }
@@ -301,11 +264,6 @@ img {
 }
 /* our-time */
 
-.container-our-time {
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
-
 .time-box {
   justify-content: center;
   display: flex;
@@ -313,6 +271,8 @@ img {
 }
 
 .our-time {
+  padding-bottom: 94px;
+  padding-top: 94px;
   background: var(--color-white-secondary);
 }
 .our-time-title {
