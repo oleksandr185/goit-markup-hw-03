@@ -392,6 +392,7 @@ img {
   margin-bottom: 34px;
 }
 .portfolio-filter {
+  border-radius: 4px;
   padding: 6px 22px;
   border-color: transparent;
   font-family: inherit;
@@ -429,6 +430,8 @@ img {
 }
 .group-item {
   padding: 20px 24px;
+  border: 1px solid var(--color-primary);
+  border-top: none;
 }
 
 .portfolio-group-title {
@@ -444,39 +447,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--color-grey);
 }
-.portfolio-group1 {
+.portfolio-group {
   background-color: var(--color-white);
-  border: 1px solid var(--color-primary);
-}
-.portfolio-group2 {
-  background-color: var(--color-white);
-  border: 1px solid var(--color-primary);
-}
-.portfolio-group3 {
-  background-color: var(--color-white);
-  border: 1px solid var(--color-primary);
-}
-.portfolio-group4 {
-  background-color: var(--color-white);
-  border: 1px solid var(--color-primary);
-}
-.portfolio-group5 {
-  background-color: var(--color-white);
-  border: 1px solid var(--color-primary);
-}
-.portfolio-group6 {
-  background-color: var(--color-white);
-  border: 1px solid var(--color-primary);
-}
-.portfolio-group7 {
-  background-color: var(--color-white);
-  border: 1px solid var(--color-primary);
-}
-.portfolio-group8 {
-  background-color: var(--color-white);
-  border: 1px solid var(--color-primary);
-}
-.portfolio-group9 {
-  background-color: var(--color-white);
-  border: 1px solid var(--color-primary);
 }
